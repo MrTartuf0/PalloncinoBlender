@@ -46,10 +46,10 @@
 
     function animate() {
         requestAnimationFrame(animate);
-        if (Mesh && Mesh.rotation) {
-            Mesh.rotation.y -= 0.1;
-            Mesh.position.y -= 0.01;
-        }
+        
+        Mesh.position.y += 0.005; 
+
+        Mesh.rotation.y -= 0.1;
         renderer.render(scene, camera);
     }
 
